@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane fx:id="stackepane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.RoomScreenController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="1366.0" style="-fx-background-image:url(img/person-woman-hotel-laptop.jpg)">
+         <children>
+            <JFXTreeTableView fx:id="treeView" layoutX="445.0" layoutY="21.0" maxWidth="-Infinity" opacity="0.7" prefHeight="700.0" prefWidth="900.0" stylesheets="@hotel.css" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+            <Pane layoutX="29.0" layoutY="22.0" opacity="0.7" prefHeight="700.0" prefWidth="421.0" style="-fx-background-color: #fff; -fx-background-radius: 6 px;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="930.0" AnchorPane.topAnchor="15.0">
+               <children>
+                  <Pane layoutX="21.0" layoutY="117.0" prefHeight="133.0" prefWidth="378.0" style="-fx-border-radius: 15; -fx-border-color: #ccc; -fx-border-width: 2 px;">
+                     <children>
+                        <JFXTextField fx:id="search_text" focusColor="#09e2a7" labelFloat="true" layoutX="34.0" layoutY="29.0" prefHeight="25.0" prefWidth="313.0" promptText="Search by room number" />
+                        <JFXButton buttonType="RAISED" layoutX="79.0" layoutY="77.0" onMouseClicked="#searchByRoomNumber" prefHeight="30.0" prefWidth="80.0" ripplerFill="WHITE" style="-fx-background-color: #09e2a7;" text="Search" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="227.0" layoutY="77.0" onMouseClicked="#makeItAvailable" prefHeight="30.0" prefWidth="80.0" ripplerFill="WHITE" style="-fx-background-color: #09e2a7;" text="Available" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="21.0" layoutY="325.0" prefHeight="133.0" prefWidth="378.0" style="-fx-border-radius: 15; -fx-border-color: #ccc; -fx-border-width: 2 px;">
+                     <children>
+                        <JFXCheckBox fx:id="busy" checkedColor="#09e2a7" layoutX="70.0" layoutY="33.0" onAction="#searchBusy" text="Busy">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <JFXCheckBox fx:id="available" checkedColor="#09e2a7" layoutX="223.0" layoutY="33.0" onAction="#searchAvailable" text="Available">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXCheckBox>
+                        <JFXButton buttonType="RAISED" layoutX="149.0" layoutY="80.0" onMouseClicked="#searchByStatus" prefHeight="30.0" prefWidth="80.0" ripplerFill="WHITE" style="-fx-background-color: #09e2a7;" text="Search" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="21.0" layoutY="531.0" prefHeight="133.0" prefWidth="378.0" style="-fx-border-radius: 15; -fx-border-color: #ccc; -fx-border-width: 2 px;">
+                     <children>
+                        <JFXButton buttonType="RAISED" layoutX="83.0" layoutY="51.0" onMouseClicked="#goBack" prefHeight="30.0" prefWidth="80.0" ripplerFill="WHITE" style="-fx-background-color: #09e2a7;" text="Back" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="218.0" layoutY="51.0" onMouseClicked="#close" prefHeight="30.0" prefWidth="80.0" ripplerFill="WHITE" style="-fx-background-color: #09e2a7;" text="Close" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Label layoutX="68.0" layoutY="64.0" text="You can search about room by room number and&#10;                              make it available">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="274.0" text="You can search about busy and available  room by click on &#10;                         Busy or Available button&#10;">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="128.0" layoutY="487.0" text="You can go back or close app&#10;">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

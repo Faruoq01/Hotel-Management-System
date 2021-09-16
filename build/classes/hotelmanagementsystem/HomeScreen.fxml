@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackepane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.HomeScreenController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="1366.0" style="-fx-background-image:url(img/person-woman-hotel-laptop.jpg)">
+         <children>
+            <Pane fx:id="pane_1" layoutX="327.0" layoutY="165.0" onMouseClicked="#ReservationScreen" onMouseEntered="#mouse_hover_1" onMouseExited="#mouse_exit_1" opacity="0.7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 6px;">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="55.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/012-room-key.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="61.0" layoutY="141.0" text="Reservation">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="paane_2" layoutX="583.0" layoutY="165.0" onMouseClicked="#RoomScreen" onMouseEntered="#mouse_hover_2" onMouseExited="#mouse_exit_2" opacity="0.7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 6px;">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="55.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/001-interface-1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="48.0" layoutY="139.0" text="Available Room">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pane_3" layoutX="827.0" layoutY="165.0" onMouseClicked="#customerScreen" onMouseEntered="#mouse_hover_3" onMouseExited="#mouse_exit_3" opacity="0.7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 6px;">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="55.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/005-user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="50.0" layoutY="141.0" text="Customers Info">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pane_4" layoutX="467.0" layoutY="409.0" onMouseClicked="#logout" onMouseEntered="#mouse_hover_4" onMouseExited="#mouse_exit_4" opacity="0.7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 6px;">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="55.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/001-exit-1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="77.0" layoutY="144.0" text="Logout">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pane_5" layoutX="710.0" layoutY="409.0" onMouseClicked="#exit" onMouseEntered="#mouse_hover_5" onMouseExited="#mouse_exit_5" opacity="0.7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 6px;">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="55.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/002-direction-1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="88.0" layoutY="141.0" text="Exit">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

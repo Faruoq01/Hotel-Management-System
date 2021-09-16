@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Title: HotelManagementSystem
+X-COMMENT: Main-Class will be added automatically by build
+Implementation-Version: 1.0
+Permissions: sandbox
+Codebase: *
+JavaFX-Version: 8.0
+Class-Path: lib/controlsfx-8.40.13.jar lib/jfoenix.jar lib/mysql-conne
+ ctor-java-5.1.39-bin.jar
+Created-By: JavaFX Packager
+Implementation-Vendor: COMPUMAGIC
+Main-Class: hotelmanagementsystem.HotelManagementSystem
+
